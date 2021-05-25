@@ -607,6 +607,7 @@ class MemTransformerLM(nn.Module):
     def init_mems(self):
         if self.mem_len > 0:
             mems = []
+            print("*******************************************************************")
             print(self.parameters())
             param = next(self.parameters())
             for i in range(self.n_layer+1):
